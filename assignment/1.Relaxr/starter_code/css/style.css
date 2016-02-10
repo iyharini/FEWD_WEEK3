@@ -10,35 +10,40 @@ Developer @GA in NYC
 /* SETUP
 /*******************************************/
 
+
 /* Box Model Hack */
+
 * {
-     -moz-box-sizing: border-box; /* Firexfox */
-     -webkit-box-sizing: border-box; /* Safari/Chrome/iOS/Android */
-     box-sizing: border-box; /* IE */
+  -moz-box-sizing: border-box;
+  /* Firexfox */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome/iOS/Android */
+  box-sizing: border-box;
+  /* IE */
 }
 
 /* Clear fix hack */
-.clearfix:after {
-     content: ".";
-     display: block;
-     clear: both;
-     visibility: hidden;
-     line-height: 0;
-     height: 0;
-}
 
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
 .clear {
   clear: both;
 }
-
 .alignright {
   float: right;
-  padding: 0 0 10px 10px; /* note the padding around a right floated image */
+  padding: 0 0 10px 10px;
+  /* note the padding around a right floated image */
 }
-
 .alignleft {
   float: left;
-  padding: 0 10px 10px 0; /* note the padding around a left floated image */
+  padding: 0 10px 10px 0;
+  /* note the padding around a left floated image */
 }
 
 /******************************************
@@ -46,31 +51,248 @@ Developer @GA in NYC
 /*******************************************/
 
 body {
-     color: #000;
-     font-size: 12px;
-     line-height: 1.4;
-     font-family: Helvetica, Arial, sans-serif;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: 300;
+  margin: 0px;
+  padding: 0px;
+  background-color: #033048;
+  /*Will, how do I get rid of the whitespace above the nav bar? I couldn't manage, so I covered it up*/
+}
+p {
+  color: #606161;
+}
+span {
+  float: left;
+  width: 0.7em;
+  font-size: 400%;
+  line-height: 80%;
+}
+.body {
+  background-color: #f0efef;
+}
+img {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+.navigation li:first-child a{
+  color:white;
+  font-size: 60px;
+  margin-left: 20px;
+  margin-right: 40px;
+}
+.navigation ul li {
+  padding: 0px 30px;
+  word-wrap: normal;
+  display: inline;
+}
+.navigation ul li a {
+  padding-left: 50px;
+  margin-left: -30px;
+  text-decoration: none;
+  color: #f9e42e;
+}
+#Categories ul {
+  padding-top: 20px;
+}
+#Categories ul li {
+  font-size: 22px;
+  font-weight: 300;
 }
 
+/*40px, semibold*/
+
+.h1 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+/*32px, extra bold*/
+
+.h2 {
+  font-size: 32px;
+  font-weight: 800;
+}
+#Ads h2 {
+  text-align: center;
+}
+
+/*Semibold, 24px*/
+
+.h3 {
+  font-size: 24px;
+  font-weight: 600;
+  color: white;
+}
+
+/*Light 24px*/
+
+.h4 {
+  font-size: 24px;
+  font-weight: 300;
+}
+
+/*22px light*/
+
+.h5 {
+  font-size: 22px;
+  font-weight: 300;
+}
+
+/*Semibold, 22*/
+
+h6 {
+  font-size: 24px;
+  font-weight: 600;
+}
+.flexbox-container {
+  display: -ms-flex;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  background-color: #f0efef;
+  padding-left: 100px;
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 50%;
+}
+#FC1 {
+  padding-left: 20px;
+  width: 700px;
+  border-bottom: 1px solid #033048;
+}
+#Column1 {
+  border-bottom: 1px solid #033048;
+  padding-bottom: 20px;
+}
+#image{
+    background-image: url('/Users/harini/FEWD/FEWD_WEEK3/assignment/1.Relaxr/starter_code/images/blog_photo1.jpg');
+    height: 300px;
+    width: 700px;
+}
+#image2{
+    background-image: url('/Users/harini/FEWD/FEWD_WEEK3/assignment/1.Relaxr/starter_code/images/blog_photo2.jpg');
+    height: 300px;
+    width: 700px;
+}
+#Column1P2 {
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+#FC1 a {
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 600;
+  color: #033048;
+}
+.Column2Container {
+  background-color: #f0efef;
+  width: 240px;
+  padding-left: 50px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+}
+#Categories {
+  /*background-color: pink;*/
+  height: 30%;
+  padding-bottom: 20px;
+}
+#About {
+  /*background-color: orange;*/
+  height: 30%;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+#FC1 h1, #About a, #Ads, #Categories, .Column2Container {
+  color: #033048;
+}
+#About p {
+  padding-top: 20px;
+}
+#About h6>a,.navigation h3>a, #Column1 h6>a,#Column1 h6>a, .navigation li a{
+  text-decoration: none;
+}
+#About h6>a:hover,#About h6>a:visited:hover, .navigation h3>a:hover,.navigation h3>a:visited:hover, #Column1 h6>a:hover,#Column1 h6>a:visited:hover, #Column1P2 h6>a:hover,#Column1P2 h6>a:visited:hover, .navigation li a:hover, .navigation li a:visited:hover{
+color: green;
+}
+#FC1 h6 {
+  text-align: right;
+}
+#Ads {
+  /*background-color: pink;*/
+  height: 40%;
+  background-color: white;
+  height: 500px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
 
 /******************************************
 /* LAYOUT
 /*******************************************/
 
+.navigation {
+  height: 100px;
+  background-color: #033048;
+  font-weight: 600;
+}
+
 /* Center the container */
-.container {
-  width: 960px;
-  margin: auto;
+
+#footer {
+  padding-top: 20px;
+  height: 100px;
+  background-color: #f9e42e;
 }
-
-header {
-
+.button {
+  display: block;
+  margin: 0 auto;
+  height: 50px;
+  width: 200px;
+  border-radius: 5%;
+  margin: 1px solid black;
+  background-color: #033048;
+  text-align: center;
+  font: bold 18px "Helvetica Neue", Arial, Helvetica, Geneva, sans-serif;
 }
-
-footer {
-
+a.button {
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
 }
-
+#footer2 {
+  padding-top: 40px;
+  padding-bottom: 5px;
+  height: 350px;
+  /*line-height: 300px;*/
+  background-color: #121212;
+  overflow: hidden;
+  /*font-size: 40px;
+  font-weight: 800;
+  color: #f9e42e;
+  text-align: center;*/
+}
+#footer2 p {
+  line-height: 100px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #f9e42e;
+  text-align: center;
+}
+#footer img {
+  line-height: 200px;
+}
+#footer2 p:nth-child(2) {
+  color: #121212;
+  /*Will, I couldn't get the spacing between the 2 images- This provided the effect*/
+}
+#footer2 p:nth-child(4) {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  padding-bottom: 0px;
+}
 /******************************************
 /* ADDITIONAL STYLES
 /*******************************************/

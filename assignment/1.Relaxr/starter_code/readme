@@ -15,7 +15,7 @@ Gutter: 20px
 
 Post Titles - 40px, semibold
 "How I implemented Relaxr in 2 weeks and changed my life."
-"I traveled across the globe thanks to Relaxr’s Excel auomation"
+"I traveled across the globe thanks to Relaxr’s Excel automation"
 
 Body text - Light 24px
 Read More - 24px semibold
@@ -32,3 +32,44 @@ About text - 22px light
 Proin sed justo vel sapien varius auctor. Proin scelerisque massa at luctus tincidunt. Fusce porttitor, sapien sed tincidunt fringilla.
 Learn More - Semibold, 22
 
+Fonts
+40px, semibold
+
+h1
+{
+font-size: 40px;
+font-weight: 600;
+}
+
+32px, extra bold
+
+h2{
+font-size: 32px;
+font-weight: 800;
+}
+
+Semibold, 24px
+
+h3{
+font-size: 24px;
+font-weight: 600;
+}
+
+Light 24px
+h4{
+font-size: 24px;
+font-weight: 300;
+}
+
+22px light
+
+h5{
+font-size: 22px;
+font-weight: 300;
+}
+
+Semibold, 22
+h6{
+font-size: 24px;
+font-weight: 600;
+}
